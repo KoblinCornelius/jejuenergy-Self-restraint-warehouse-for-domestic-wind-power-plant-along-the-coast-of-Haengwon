@@ -1,5 +1,21 @@
-git init
-git remote add origin https://github.com/YOUR_USERNAME/self-care-app.git
-git add .
-git commit -m "Initial commit"
-git push -u origin master
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyAMtN5_ekRYbxdbiw2fBdGsXwGdmhcboK8",
+  authDomain: "charged-formula-426808-d9.firebaseapp.com",
+  projectId: "charged-formula-426808-d9",
+  storageBucket: "charged-formula-426808-d9.appspot.com",
+  messagingSenderId: "601052760723",
+  appId: "1:601052760723:web:93f33982d69f8bf1181b66",
+  measurementId: "G-16S7P2SKQC"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
